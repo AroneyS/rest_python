@@ -34,7 +34,7 @@ class User(Resource):
     def post(self, name):
         parser = reqparse.RequestParser()
         parser.add_argument("age")
-        parse.add_argument("occupation")
+        parser.add_argument("occupation")
         args = parser.parse_args()
 
         for user in users:
@@ -52,7 +52,7 @@ class User(Resource):
     def put(self, name):
             parser = reqparse.RequestParser()
             parser.add_argument("age")
-            parse.add_argument("occupation")
+            parser.add_argument("occupation")
             args = parser.parse_args()
 
             for user in users:
